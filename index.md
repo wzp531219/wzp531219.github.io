@@ -1,37 +1,112 @@
-## Welcome to GitHub Pages
+title: 你不知道的JavaScript
+### 你不知道的JavaScript
 
-You can use the [editor on GitHub](https://github.com/wzp531219/wzp531219.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+JavaScript是一种基于对象和事件驱动的客户端脚本语言，最初的设计是为了检验HTML表单输入的正确性。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 第一期学习目标
 
-### Markdown
+#### 了解什么是JavaScript？
+#### 了解avaScript的发展史
+#### 了解JavaScript的实现
+#### 了解前端三剑客
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+支持的快捷键有：
 
-```markdown
-Syntax highlighted code block
+* 加粗： `Ctrl/Cmd + B`
+* 标题： `Ctrl/Cmd + H`
+* 插入链接： `Ctrl/Cmd + K`
+* 插入代码： `Ctrl/Cmd + Shift + C`
+* 行内代码： `Ctrl/Cmd + Shift + K`
+* 插入图片： `Ctrl/Cmd + Shift + I`
+* 无序列表： `Ctrl/Cmd + Shift + L`
+* 撤销： `Ctrl/Cmd + Z`
 
-# Header 1
-## Header 2
-### Header 3
+### 常用语法
 
-- Bulleted
-- List
+#### 标题
 
-1. Numbered
-2. List
+> 语法格式：** '#'+'空格'+'文本' **
 
-**Bold** and _Italic_ and `Code` text
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
 
-[Link](url) and ![Image](src)
+#### 列表
+
+> 无序列表语法格式：** '-' + '空格' ＋ '文本' **
+
+- 文本一
+- 文本二
+- 文本三
+
+> 有序列表语法格式：** '数字' + '.' + '空格' + '文本' **
+
+1. 文本一
+2. 文本二
+3. 文本三
+
+#### 链接和图片
+
+在 Markdown 中插入链接不需要其他按钮，你只需要使用`［显示文本］(链接地址)`这样的格式语法即可。例如：
+[稀土掘金](https://gold.xitu.io)
+插入图片的语法与插入链接的语法很像，只是前面多了一个 `!`.语法如下：
+`![图片的标注](图片链接地址)`
+
+#### 引用
+
+> 语法：** '>'+'空格'+'文本' **
+
+
+例如：
+
+> Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。
+
+#### 代码
+
+如下是代码段的语法：
+
+<pre>
+```编程语言
+ 这是代码段
+```
+</pre>
+
+例如：
+
+``` python
+def bubbleSort(alist):
+ for passnum in range(len(alist)-1,0,-1):
+ #print alist,passnum
+ for i in range(passnum):
+ if alist[i]>alist[i+1]:
+ temp = alist[i]
+ alist[i] = alist[i+1]
+ alist[i+1] = temp
+ return alist
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### 表格
 
-### Jekyll Themes
+**Markdown　Extra**　表格语法：
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wzp531219/wzp531219.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+项目 | 价格
+-------- | ---
+iPhone | $560
+iPad | $780
+iMac | $1000
 
-### Support or Contact
+可以使用冒号来定义对齐方式：
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| 项目 | 价格 | 数量 |
+| :-------- | --------:| :--: |
+| iPhone | 6000 元 | 5 |
+| iPad | 3800 元 | 12 |
+| iMac | 10000 元 | 234 |
+
+
+#### 结语
+
+王昭盼个人博客创建成功 哈哈哈！
